@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+  .dome{
+    text-align: center;
+    padding-top: 25px;
+  }
+  .dome .text-library{
+  font-family: "Lobster", sans-serif;
+  font-size: 35px;
+  margin-bottom: 25px;
+  color: var(--bg-color);
+  }
+  .dome .text p{
+  font-size: 30px;
+  }
+  
+  .dome .model-1 {
+  margin: auto;
+  margin-bottom: 25px;
+  }
+  .dome .model-2 {
+    margin: auto;
+    margin-bottom: 15px;
+    }
+    .model-3{
+      margin: auto;
+      margin-bottom: 40px;
+      position: relative;
+      left: -30px;
+    }
+    .model-4{
+      margin: auto;
+      margin-bottom: 35px;
+    }
+    .model-5{
+      margin: auto;
+      margin-bottom: 20px;
+      height: 45px;
+      position: relative;
+      left: -18px;
+    }
+    .model-6 input{/* margin-bottom: 19px !important; */margin: auto;}
+    .model-6{
+      background: #f1f1f1;
+      padding: 10px;
+    }
+    @media (max-width: 425px){
+      .dome .text-library{
+        margin-bottom: 15px;
+        font-size: 30px;
+      }
+      .dome .text p {
+        font-size: 25px;
+    }
+    .ifrem-cerd {
+    height: 210px;
+}
+    }
+    

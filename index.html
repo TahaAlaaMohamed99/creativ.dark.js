@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative-dark.js</title>
+    <link rel="stylesheet" href="css/prism.min.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- owl -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="https://unpkg.com/highlightjs-badge/highlightjs/styles/vs2015.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- navbar start -->
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#Started">Get Started</a></li>
+                    <li><a href="Demo.html">Domes</a></li>
+                    <li><a class="button" href="Contact.html">Contact us</a></li>
+                </ul>
+                <h1 class="logo text-library">Creative <span>Dark.js</span> </h1>
+            </div>
+        </nav>
+            <!-- navbar end -->
+    <!-- banner-section start -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="row py-md-5 py-2">
+                <div class="col-md-6 order-md-first order-last">
+                    <div class="row py-md-5 py-2">
+                        <div class="col-12">
+                            <div class="text">
+                                <h4>
+                                    <span class="text-library">Creative Dark js</span> is library of dark mode
+                                    localstorage javascrpit to make it easy for you to convert your website from light
+                                    mode to dark mode.
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6">
+                            <a class="button" href="Creative.dark.js.zip" download>
+                               <div>
+                                Download
+                               </div> 
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6">
+                            <a class="button" target="_blank" href="https://creative2024.github.io/Creative-dark.js-/">
+                               <div>GitHub</div> 
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="moon-img">
+                        <img src="img/moon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- banner-section end -->
+    <!-- get-Started-section start -->
+    <section class="get-Started">
+        <div class="container">
+            <div class="headline">
+                <h1 id="Started">Get Started</h1>
+            </div>
+            <div class="copy-link">
+                <h4>CSS</h4>
+                <P>Copy-paste the stylesheet <span class="html5">&lt;link&gt;</span> into your <span
+                        class="html5">&lt;head&gt;</span> before all other stylesheets to load our CSS.</P>
+                <div class="code-box-copy">
+                    <button class="code-box-copy__btn " data-clipboard-target="#example-html" title="Copy"></button>
+                    <pre><code class="language-html  " id="example-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/Creative2024/Creative-dark.js-@main/dome/assets/css/Creative-dark.min.css&quot;&gt; </code>
+        </pre>
+                </div>
+            </div>
+            <div class="copy-link">
+                <h4>JS</h4>
+                <P>Copy-paste Place one of the following <span class="html5">&lt;script&gt;</span> near the end of your pages right before the closing <span
+                        class="html5">&lt;body&gt;</span> tag.</P>
+                <div class="code-box-copy">
+                    <button class="code-box-copy__btn " data-clipboard-target="#example-html-2" title="Copy"></button>
+                    <pre><code class="language-html  " id="example-html-2">&lt;script src=&quot;https://cdn.jsdelivr.net/gh/Creative2024/Creative-dark.js-@main/dome/assets/js/Creative-dark.min.js&quot;&gt; </code>
+        </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- footer -->
+  <footer class="footer">
+<div class="text-footer">
+<h3>@Copyright 2022 <span class="logo"> Creative</span> <span>Web .</span>   All rights reserved.</h3>
+</div>
+  </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/prism.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+    (function($, undefined) {
+        var pluginName = 'codeBoxCopy',
+            defaults = {
+                tooltipText: 'Copied',
+                tooltipShowTime: 1000,
+                tooltipFadeInTime: 300,
+                tooltipFadeOutTime: 300
+            };
+
+        function Plugin(element, options) {
+            this.element = element;
+            this.options = $.extend({}, defaults, options);
+            this._defaults = defaults;
+            this._name = pluginName;
+            this.init();
+        }
+
+        Plugin.prototype = {
+
+            init: function() {
+
+                var $btn, $tooltip, btn, tooltip, opts, clipboard;
+
+                btn = this.element.querySelector('.code-box-copy__btn');
+
+                if (!btn) return;
+
+                opts = this.options;
+                clipboard = new Clipboard(btn);
+
+                clipboard.on('success', function(e) {
+                    $btn = $(e.trigger);
+                    $btn.prop('disabled', true);
+
+                    tooltip = '<span class="code-box-copy__tooltip">';
+                    tooltip += opts.tooltipText;
+                    tooltip += '</span>';
+                    $(tooltip).prependTo($btn);
+                    $tooltip = $btn.find('.code-box-copy__tooltip');
+                    $tooltip.fadeIn(opts.tooltipFadeInTime);
+
+                    setTimeout(function() {
+                        $tooltip.fadeOut(opts.tooltipFadeOutTime, function() {
+                            $tooltip.remove();
+                        });
+                        $btn.prop('disabled', false);
+                    }, opts.tooltipShowTime);
+                });
+            }
+        };
+
+        $.fn[pluginName] = function(options) {
+            return this.each(function() {
+                if (!$.data(this, 'plugin_' + pluginName)) {
+                    $.data(this, 'plugin_' + pluginName,
+                        new Plugin(this, options));
+                }
+            });
+        };
+    })(jQuery);
+
+    $('.code-box-copy').codeBoxCopy({
+        tooltipText: 'Copied',
+        tooltipShowTime: 500,
+        tooltipFadeInTime: 500,
+        tooltipFadeOutTime: 700
+    });;
+
+</script>   
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+ /* model-1*/
+    .model-1 input[type=checkbox].toggleSwitch {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: 0;
+    cursor: pointer;
+    width: 85px;
+    height: 35px;
+    border-radius: 3em;
+    background-color: #141414;
+    -webkit-transition: background-color 0.09s ease-in-out;
+    transition: background-color 0.09s ease-in-out;
+    position: relative;
+  }
+  
+  .model-1 input[type=checkbox].toggleSwitch:active::after {
+    background-color: #f2f2f2;
+    padding-right: 20px;
+  }
+  
+  .model-1  input[type=checkbox].toggleSwitch::after {
+    content: "\f186";
+    font-family: "Font Awesome 5 Pro";
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    font-weight: 900;
+    border-radius: 3em;
+    position: absolute;
+    font-size: 16px;
+    text-align: center;
+    left: 10px;
+    top: 49%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    -webkit-box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  .model-1  input[type=checkbox].toggleSwitch:checked {
+    background-color: #f1f1f1;
+  }
+  
+  .model-1  input[type=checkbox].toggleSwitch:checked:active::after {
+    margin-left: -20px;
+  }
+ .model-1  input[type=checkbox].toggleSwitch:checked::after {
+    left: 55px;
+    background-color:#141414;
+    color: #f1f1f1;
+    content: "\f185";
+  }
+  /* model-2*/
+  .model-2 input[type=checkbox].toggleSwitch {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: 0;
+    cursor: pointer;
+    width: 20px;
+    height: 60px;
+    border-radius: 3em;
+    background-color: #141414;
+    -webkit-transition: background-color 0.09s ease-in-out;
+    transition: background-color 0.09s ease-in-out;
+    position: relative;
+  }
+  
+  .model-2 input[type=checkbox].toggleSwitch:active::after {
+    background-color: #f1f1f1;
+  }
+  
+  .model-2 input[type=checkbox].toggleSwitch::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: #f1f1f1;
+    border-radius: 3em;
+    position: absolute;
+    top: 0%;
+    left: -3px;
+    -webkit-transition: top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    transition: top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    -webkit-box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  .model-2 input[type=checkbox].toggleSwitch:checked {
+    background-color: #f1f1f1;
+  }
+  
+  .model-2 input[type=checkbox].toggleSwitch:checked::after {
+   top: 70%;
+    background-color: #141414;
+  }
+/* model-3*/
+.model-3 input[type=checkbox].toggleSwitch {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: 0;
+    box-shadow: 0px 0px 8px 0px rgb(17 17 17 / 34%) inset;
+    cursor: pointer;
+    width: 140px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #C2C2C2;
+    -webkit-transition: background-color 0.09s ease-in-out;
+    transition: background-color 0.09s ease-in-out;
+    position: absolute;
+  }
+  
+  .model-3 input[type=checkbox].toggleSwitch:active::after {
+    background-color: #f2f2f2;
+    padding-right: 20px;
+  }
+  
+  .model-3  input[type=checkbox].toggleSwitch::after {
+    content: "Light";
+    font-family: "Font Awesome 5 Pro";
+    width: 55px;
+    height: 25px;
+    background-color: white;
+    font-weight: 900;
+    border-radius: 3em;
+    position: absolute;
+    z-index: 1000;
+    font-size: 13px;
+    padding: 3px;
+    text-align: center;
+    left: 3px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    -webkit-box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  .model-3  input[type=checkbox].toggleSwitch:checked {
+    background-color: #C2C2C2;
+  }
+  
+  .model-3  input[type=checkbox].toggleSwitch:checked:active::after {
+    margin-left: -20px;
+  }
+ .model-3  input[type=checkbox].toggleSwitch:checked::after {
+    left: 82px;
+    content: "Dark";
+    padding: 2px;
+  }
+  .model-3 label{
+    padding: 0px 10px;
+    border-radius: 16px;
+    display: inline-block;
+    font-size: 12px;
+    position: relative;
+    color: #000000;
+    font-weight: 500;
+  }
+  .model-3 .light{
+      /* margin-right: 25px; */
+      position: relative;
+      top: 1px;
+      left: 5px;
+  }
+  .model-3 .Dark{
+    position: relative;
+    /* right: -4px; */
+    top: 1px;
+    left: 60px;
+  }
+   /* model-4*/
+   .model-4 input[type=checkbox].toggleSwitch {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: 0;
+    cursor: pointer;
+    width: 60px;
+    height: 15px;
+    border-radius: 3em;
+    background-color: #141414;
+    -webkit-transition: background-color 0.09s ease-in-out;
+    transition: background-color 0.09s ease-in-out;
+    position: relative;
+  }
+  
+  .model-4 input[type=checkbox].toggleSwitch:active::after {
+    background-color: #f1f1f1;
+  }
+  
+  .model-4 input[type=checkbox].toggleSwitch::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: #E0E0E0;
+    border-radius: 3em;
+    position: absolute;
+    top: -35%;
+    left: -1px;
+    -webkit-transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    -webkit-box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  .model-4 input[type=checkbox].toggleSwitch:checked {
+    background-color: #f1f1f1;
+  }
+  
+  .model-4 input[type=checkbox].toggleSwitch:checked::after {
+   left: 40px;
+   background-color: #141414;
+  }
+  .model-4 span{
+    position: relative;
+    top: 3px;
+    margin: 5px;
+    font-size: 20px;
+  }
+  .model-4 .light{
+    color: #ffa500;
+    text-shadow: 0px 0px 16px #ffa500;
+  }
+  .model-4 .dark{
+      color: #918d8df1;
+  }
+  body.dark .model-4 .dark{
+    color: #fff;
+    text-shadow: 0px 0px 11px #fff;
+  }
+  body.dark .model-4 .light{
+      color: #918d8df1;
+      text-shadow: none;
+  }
+  /* model-5*/
+.model-5 input[type=checkbox].toggleSwitch {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: 0;
+    cursor: pointer;
+    width: 130px;
+    height: 45px;
+    box-shadow: 0px 0px 8px 0px rgb(17 17 17 / 34%) inset;
+    border-radius: 3em;
+    background-color: #C2C2C2;
+    -webkit-transition: background-color 0.09s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+    position: absolute;
+  }
+  
+  .model-5 input[type=checkbox].toggleSwitch:active::after {
+    background-color: #f2f2f2;
+    padding-right: 20px;
+  }
+  
+  .model-5  input[type=checkbox].toggleSwitch::after {
+    content: "light_mode";
+    font-family: 'Material Symbols Outlined';
+    width: 37px;
+    height: 37px;
+    background-color: white;
+    font-weight: 900;
+    border-radius: 3em;
+    position: absolute;
+    z-index: 1000;
+    font-size: 20px;
+    padding: 3px;
+    box-shadow: 0px 0px 6px -2px #111;
+    text-align: center;
+    left: 5px;
+    top: 49%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+  }
+  
+  .model-5  input[type=checkbox].toggleSwitch:checked {
+    box-shadow: 0px 0px 6px -2px #ffff;
+  }
+  
+  .model-5 input[type=checkbox].toggleSwitch:checked:active::after {
+    margin-left: -20px;
+  }
+ .model-5  input[type=checkbox].toggleSwitch:checked::after {
+    left: 87px;
+    content: "dark_mode";
+    padding-left: 4px;
+  }
+  .model-5 label{
+    display: inline-block;
+    font-size: 12px;
+    position: relative;
+    color: #000000;
+    top: 9px;
+    font-weight: bold;
+  }
+  .model-5 .light{
+      font-size: 12px;
+      margin-left: 55px;
+  }
+  .model-5 .Dark{
+      display: none;
+     
+  }
+  .dark .model-5 .light{
+      display: none;
+  }
+  .dark .model-5 .Dark{
+      display: block;
+      position: relative;
+      margin-left: 10px;
+  }
+  .model-6 input[type="checkbox"] {
+    height:40px;
+    width: 40px;
+    -webkit-appearance: none;
+    box-shadow: 
+      -10px -10px 15px rgba(255, 255, 255, 0.5),
+      10px 10px 15px rgba(70, 70, 70, 0.12);
+    border-radius: 50%;
+    border: 5px solid #ececec;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .model-6 input[type="checkbox"]::after {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f011";
+    color: #7a7a7a;
+    font-size: 20px;
+  }
+  .model-6 input[type="checkbox"]:checked{
+    box-shadow: 
+    -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+  }
+  .model-6 input[type="checkbox"]:checked::after{
+    color: #15e38a;
+  }
+  
