@@ -20,3 +20,11 @@ To include the necessary styles, copy and paste the following `<link>` into your
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Creative2024/Creative-dark.js-@main/dome/assets/css/Creative-dark.min.css">
+```
+
+### JS
+
+Copy-paste Place one of the following `<script>` near the end of your pages right before the closing  `<body>` tag.
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/Creative2024/Creative-dark.js-@main/dome/assets/js/Creative-dark.min.js"> 
